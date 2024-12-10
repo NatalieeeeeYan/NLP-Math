@@ -1,0 +1,11 @@
+.history/
+*.DS_Store/
+
+*/models/
+*/dataset/
+*.log
+*results*.json
+*.jsonl
+*.csv
+
+!*eval*.log

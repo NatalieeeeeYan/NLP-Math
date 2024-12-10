@@ -1,0 +1,7 @@
+nohup: ignoring input
+Filtered final ans (with numbers and English words): 
+Filtered final ans (only numbers): []
+Traceback (most recent call last):
+  File "/home/Data/.bin/.config/dz/nlp-math/evaluation.py", line 124, in <module>
+    gts.append(extract_ground_truth(res['ground_truth']))
+KeyError: 'ground_truth'

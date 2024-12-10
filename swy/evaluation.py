@@ -2,7 +2,7 @@ import os
 import json
 import re
 import argparse
-from word2number import w2n
+# from word2number import w2n
 
 
 prompt_sys = 'You are a math assistant who solves problems step by step.'

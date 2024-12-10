@@ -3,10 +3,14 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
 
 # Load the model
-model_name = "Qwen/Qwen2.5-0.5B-Instruct"
-model_path = './model/'
+model_name = "Qwen/Qwen2.5-0.5B"
+model_path = './Qwen2.5-0.5B'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device) 
+print(f"Using device: {device}")
 print("Model loaded successfully!")
 
 # Define the prompt for generating math reasoning and final answer
@@ -36,19 +40,19 @@ def solve_math_with_llm(data: list) -> list:
         correct_answer = d['answer']
         prompt = generate_math_prompt(question)
         
-        # Generate the prompt and get the model's output
+        # Manually format the input as a list of message tuples
         messages = [
             {"role": "system", "content": "You are a math assistant who solves problems step by step."},
             {"role": "user", "content": prompt}
         ]
         
-        formatted_text = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True
-        )
+        # Manually format the input text from the messages (assuming chat-style input)
+        formatted_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in messages])
         
+        # Tokenize the input text
         model_inputs = tokenizer([formatted_text], return_tensors="pt").to(model.device)
+        
+        # Generate model output
         generated_ids = model.generate(
             **model_inputs,
             max_new_tokens=512
@@ -57,22 +61,18 @@ def solve_math_with_llm(data: list) -> list:
         # Decode the output
         output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
         
-        # Extract the reasoning and final answer from the model output
-        # reasoning, final_answer = output.split('####<answer>') if '####<answer>' in output else (output, 'No answer found')
-        
-        # Clean up the reasoning part (if any)
-        # reasoning = reasoning.strip()
-        # final_answer = final_answer.strip()
+        # Extract the reasoning and final answer from the model output (if applicable)
+        # Assuming the final answer is marked as "####<answer>" in the response
+        final_answer = output.replace(prompt, '').replace("You are a math assistant who solves problems step by step.", '')
         
         print("Question:", question)
-        # print("Reasoning:", reasoning)
-        print("Model's Answer:", output)
+        print("Model's Answer:", final_answer)
         
         # Save the results
         predictions.append({
             'question': question,
             'ground_truth': correct_answer,
-            'prediction': output
+            'prediction': final_answer
         })
     return predictions
 
@@ -87,7 +87,7 @@ with open("./dataset/gsm8k/test.jsonl", 'r') as f:
 predicted_results = solve_math_with_llm(data)
 
 # Save the results to a JSON file for later analysis
-with open('./results1207.json', 'w', encoding='utf-8') as f:
+with open('./qwen2505_notrain_results1209.json', 'w', encoding='utf-8') as f:
     json.dump(predicted_results, f, ensure_ascii=False, indent=4)
 
 print("Results saved successfully!")
