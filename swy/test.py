@@ -1,4 +1,3 @@
-
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
@@ -51,7 +50,6 @@ def solve_math_with_llm(data: list) -> list:
         
         # 解码输出
         output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-        
         # 提取最终答案
         final_answer = output.replace(prompt, '').replace("You are a math assistant who solves problems step by step.", '')
         
@@ -78,13 +76,17 @@ if __name__ == '__main__':
     with open("./dataset/gsm8k/test.jsonl", 'r') as f:
         for line in f:
             data.append(json.loads(line))
+    print("Dataset Loaded!")
+    
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
 
     # 加载微调后的模型和分词器
+    # tokenizer = AutoTokenizer.from_pretrained(args.model)
+    # model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype="auto", device_map="auto", safetensors=False, low_cpu_mem_usage=True)
     tokenizer = AutoTokenizer.from_pretrained(args.model)
-    model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype="auto", device_map="auto")
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = AutoModelForCausalLM.from_pretrained(args.model)
     model.to(device)
-    print(f"Using device: {device}")
     print("Model loaded successfully!")
 
     # 获取模型预测结果

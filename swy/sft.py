@@ -4,16 +4,16 @@ from torch.utils.data import Dataset, random_split
 import json
 
 # 加载模型和分词器
-# model_name = "Qwen2.5-0.5B"
-# model_path = './models/Qwen2.5-0.5B'
-# tokenizer = AutoTokenizer.from_pretrained(model_path)
-# model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
-
-# 预测用
-model_path = './models/qwen2.5_sft_finetuned'
-model_name = 'qwen2.5_sft_finetuned'
+model_name = "Qwen2.5-Math-1.5B"
+model_path = './models/Qwen2.5-Math-1.5B'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
+
+# # 预测用
+# model_path = './models/qwen2.5_sft_finetuned'
+# model_name = 'qwen2.5_sft_finetuned'
+# tokenizer = AutoTokenizer.from_pretrained(model_path)
+# model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
@@ -62,7 +62,7 @@ train_dataset, val_dataset = random_split(dataset, [train_size, val_size])
 
 # 设置训练参数
 training_args = TrainingArguments(
-    output_dir='./qwen2.5_sft_results',  # 模型保存路径
+    output_dir='./qwenMath15_sft_results',  # 模型保存路径
     evaluation_strategy="epoch",  # 每个epoch后评估一次
     learning_rate=5e-6,  # 学习率
     per_device_train_batch_size=4,  # 每个设备上的训练批次大小
@@ -87,12 +87,12 @@ trainer = Trainer(
 )
 
 # 开始训练
-# trainer.train()
+trainer.train()
 
 # 保存微调后的模型
-# trainer.save_model('./models/qwen2.5_sft_finetuned')
-# tokenizer.save_pretrained('./models/qwen2.5_sft_finetuned')
-# print("Model fine-tuning completed and saved.")
+trainer.save_model('./models/qwenMath15_sft_finetuned')
+tokenizer.save_pretrained('./models/qwenMath15_sft_finetuned')
+print("Model fine-tuning completed and saved.")
 
 # 验证微调后的模型
 def solve_math_with_llm(data: list) -> list:
@@ -139,7 +139,7 @@ with open("./dataset/gsm8k/test.jsonl", 'r') as f:
 predicted_results = solve_math_with_llm(test_data)
 
 # 保存预测结果
-with open('./results/qwen2.5_sft_test_results.json', 'w', encoding='utf-8') as f:
+with open('./results/qwenMath15_sft_test_results.json', 'w', encoding='utf-8') as f:
     json.dump(predicted_results, f, ensure_ascii=False, indent=4)
 
 print("Test results saved successfully!")

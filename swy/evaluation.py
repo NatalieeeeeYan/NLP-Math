@@ -37,6 +37,35 @@ def convert_words_to_numbers(text: str) -> str:
     return text
 
 
+# def extract_finalans(model_reply: str) -> list:
+#     '''
+#     提取模型回答中的正确答案
+
+#     @param model_reply: 模型的回答(str)
+
+#     @return 提取到的回答中的数字（可能的回答）(list[float])
+#     '''
+#     model_reply = model_reply.replace(prompt_sys, '').replace(prompt, '').replace('systemuser.question:', '')
+#     model_reply = model_reply.replace('\\', '').replace('\n', '').lower()
+
+#     # 提取包含"final answer"的部分
+#     final_ans = model_reply[model_reply.find('final answer'):]
+
+#     # 使用正则表达式去除所有字母和符号，仅保留数字和英文数字
+#     final_ans = re.sub(r'[^a-z0-9\s]', '', final_ans)  # 去除非字母、数字和空格的字符
+    
+#     # 将英文数字转换为阿拉伯数字
+#     final_ans = convert_words_to_numbers(final_ans)
+#     # final_ans = w2n.word_to_num(final_ans)
+#     final_ans = final_ans.strip()  # 去掉两端的空格
+#     print("Filtered final ans (with numbers and English words):", final_ans)
+
+#     final_ans = re.sub(r'[^0-9\s]', '', final_ans)  # 去除非数字和空格的字符
+#     final_ans = final_ans.strip().split()
+#     print("Filtered final ans (only numbers):", final_ans)
+#     final_ans = [float(num) for num in final_ans]  # 显式转换为浮动类型
+#     return final_ans
+
 def extract_finalans(model_reply: str) -> list:
     '''
     提取模型回答中的正确答案
@@ -49,14 +78,24 @@ def extract_finalans(model_reply: str) -> list:
     model_reply = model_reply.replace('\\', '').replace('\n', '').lower()
 
     # 提取包含"final answer"的部分
-    final_ans = model_reply[model_reply.find('final answer'):]
+    final_ans = model_reply[model_reply.find('final answer'):] if 'final answer' in model_reply else ''
+
+    # 查找包含 therefore/so 等词的句子
+    result_sentence = None
+    for sentence in model_reply.split('. '):
+        if any(word in sentence for word in ['therefore', 'so', 'thus', 'hence']):
+            result_sentence = sentence
+
+    if result_sentence:
+        # 提取 result_sentence 中的数字
+        possible_numbers = re.findall(r'\d+\.?\d*', convert_words_to_numbers(result_sentence))
+        final_ans += ' ' + ' '.join(possible_numbers)
 
     # 使用正则表达式去除所有字母和符号，仅保留数字和英文数字
     final_ans = re.sub(r'[^a-z0-9\s]', '', final_ans)  # 去除非字母、数字和空格的字符
     
     # 将英文数字转换为阿拉伯数字
     final_ans = convert_words_to_numbers(final_ans)
-    # final_ans = w2n.word_to_num(final_ans)
     final_ans = final_ans.strip()  # 去掉两端的空格
     print("Filtered final ans (with numbers and English words):", final_ans)
 
@@ -65,6 +104,7 @@ def extract_finalans(model_reply: str) -> list:
     print("Filtered final ans (only numbers):", final_ans)
     final_ans = [float(num) for num in final_ans]  # 显式转换为浮动类型
     return final_ans
+
 
 
 def extract_ground_truth(ground_truth: str) -> float: 

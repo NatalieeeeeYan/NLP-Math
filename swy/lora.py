@@ -6,9 +6,10 @@ from torch.optim import AdamW
 from tqdm import tqdm
 import json
 
+
 # 加载模型和分词器
-model_name = "Qwen2.5-0.5B_sft"
-model_path = './models/qwen2.5_sft_finetuned'
+model_name = "Qwen2.5-Math-1.5B"
+model_path = './models/Qwen2.5-Math-1.5B'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
 
@@ -130,9 +131,9 @@ def train_model(model, train_dataloader, val_dataloader, optimizer, num_epochs=5
 
 
 # 微调模型
-train_model(model, train_dataloader, val_dataloader, optimizer, num_epochs=20)
+train_model(model, train_dataloader, val_dataloader, optimizer, num_epochs=5)
 
 # 保存最终模型
-model.save_pretrained('./models/qwen2.5_sft_lora')
-tokenizer.save_pretrained('./models/qwen2.5_sft_lora')
+model.save_pretrained('./models/qwenMath15_sft_lora')
+tokenizer.save_pretrained('./models/qwenMath15_sft_lora')
 print("Model fine-tuning (sft lora) completed and saved.")

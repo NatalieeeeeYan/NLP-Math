@@ -3,8 +3,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
 
 # Load the model
-model_name = "Qwen/Qwen2.5-0.5B"
-model_path = './Qwen2.5-0.5B'
+model_name = "Qwen2.5-0.5B"
+model_path = './models/Qwen2.5-0.5B'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto", device_map="auto")
 
@@ -87,7 +87,7 @@ with open("./dataset/gsm8k/test.jsonl", 'r') as f:
 predicted_results = solve_math_with_llm(data)
 
 # Save the results to a JSON file for later analysis
-with open('./qwen2505_notrain_results1209.json', 'w', encoding='utf-8') as f:
+with open('./results/qwen2505_notrain_results1209.json', 'w', encoding='utf-8') as f:
     json.dump(predicted_results, f, ensure_ascii=False, indent=4)
 
 print("Results saved successfully!")
