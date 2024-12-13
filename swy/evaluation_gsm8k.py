@@ -37,35 +37,6 @@ def convert_words_to_numbers(text: str) -> str:
     return text
 
 
-# def extract_finalans(model_reply: str) -> list:
-#     '''
-#     提取模型回答中的正确答案
-
-#     @param model_reply: 模型的回答(str)
-
-#     @return 提取到的回答中的数字（可能的回答）(list[float])
-#     '''
-#     model_reply = model_reply.replace(prompt_sys, '').replace(prompt, '').replace('systemuser.question:', '')
-#     model_reply = model_reply.replace('\\', '').replace('\n', '').lower()
-
-#     # 提取包含"final answer"的部分
-#     final_ans = model_reply[model_reply.find('final answer'):]
-
-#     # 使用正则表达式去除所有字母和符号，仅保留数字和英文数字
-#     final_ans = re.sub(r'[^a-z0-9\s]', '', final_ans)  # 去除非字母、数字和空格的字符
-    
-#     # 将英文数字转换为阿拉伯数字
-#     final_ans = convert_words_to_numbers(final_ans)
-#     # final_ans = w2n.word_to_num(final_ans)
-#     final_ans = final_ans.strip()  # 去掉两端的空格
-#     print("Filtered final ans (with numbers and English words):", final_ans)
-
-#     final_ans = re.sub(r'[^0-9\s]', '', final_ans)  # 去除非数字和空格的字符
-#     final_ans = final_ans.strip().split()
-#     print("Filtered final ans (only numbers):", final_ans)
-#     final_ans = [float(num) for num in final_ans]  # 显式转换为浮动类型
-#     return final_ans
-
 def extract_finalans(model_reply: str) -> list:
     '''
     提取模型回答中的正确答案
@@ -151,17 +122,32 @@ def calculate_accuracy(ground_truth: list[float], model_outputs: list[list[int]]
 if __name__ == '__main__': 
     parser = argparse.ArgumentParser(description="Run segmentation on test images")
     parser.add_argument('--result', type=str, help='Path to the result') 
+    parser.add_argument('--gt', type=str, help='Path to the ground truth', default=None) 
     args = parser.parse_args()
     
-    with open(args.result, 'r') as f:
-        results = json.load(f)
-    
+    # 支持json和jsonl两种格式的结果文件
+    if args.result.endswith('.jsonl'):
+        with open(args.result, 'r') as f:
+            results = [json.loads(line) for line in f]
+    else:
+        with open(args.result, 'r') as f:
+            results = json.load(f)
+        
     gts = []
     ans = []
     for res in results:
-        # extract_ans(res['prediction'])
         ans.append(extract_finalans(res['prediction']))
-        gts.append(extract_ground_truth(res['ground_truth']))
+        if 'ground_truth' in res:       # 如果有ground_truth，直接提取
+            gts.append(extract_ground_truth(res['ground_truth']))
+        else:       # 如果没有ground_truth，尝试从数据文件中读取
+            if args.gt is None:
+                raise ValueError('Ground truth is missing')
+            with open(args.gt, 'r') as f:
+                ground_truth_list = [json.loads(line) for line in f]
+            for question in ground_truth_list:
+                if question['question'] == res['question']:
+                    gts.append(extract_ground_truth(question['answer']))
+                    break
     
     accuracy = calculate_accuracy(ground_truth=gts, model_outputs=ans)
     print(f'Accuracy: {accuracy}')

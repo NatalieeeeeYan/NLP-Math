@@ -7,5 +7,6 @@
 *results*.json
 *.jsonl
 *.csv
+swy/qwen_prefix_tuning_results/
 
 !*eval*.log

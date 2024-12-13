@@ -132,6 +132,7 @@ training_args = TrainingArguments(
     save_total_limit=2,  # 最多保存2个检查点
     report_to="none",  # 禁用默认的日志记录工具
     load_best_model_at_end=True,  # 使用验证集表现最好的模型
+    save_safetensors=False
 )
 
 # 定义 Trainer
@@ -146,8 +147,16 @@ trainer = Trainer(
 # 开始训练
 trainer.train()
 
-# 保存微调后的模型
-torch.save(model.state_dict(), './models/qwen_prefix_tuning_model.pt')
-tokenizer.save_pretrained('./models/qwen_prefix_tuning_tokenizer')
-print("Model fine-tuning with manual Prefix Tuning completed and saved.")
- 
+# 保存微调后的模型和分词器
+model_save_path = './models/qwen_prefix_tuning_model'
+pt_save_path = './models/qwen_prefix_tuning_model.pt'
+
+# 保存完整的模型
+model.base_model.save_pretrained(model_save_path)  # 保存基础模型
+tokenizer.save_pretrained(model_save_path)  # 保存分词器
+
+# 保存 Prefix Tuning 的权重
+torch.save(model.prefix_tuning.state_dict(), pt_save_path)
+
+print(f"Model and tokenizer saved to {model_save_path}")
+print(f"Prefix tuning weights saved to {pt_save_path}")

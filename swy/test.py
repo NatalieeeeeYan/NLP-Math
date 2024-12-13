@@ -26,6 +26,8 @@ def solve_math_with_llm(data: list) -> list:
     @return: predictions A list of instances with the math question and predicted result.
     '''
     predictions = []
+    n = len(data)
+    i = 1
     for d in data:
         question = d['question']
         prompt = generate_math_prompt(question)
@@ -53,7 +55,7 @@ def solve_math_with_llm(data: list) -> list:
         # 提取最终答案
         final_answer = output.replace(prompt, '').replace("You are a math assistant who solves problems step by step.", '')
         
-        print("Question:", question)
+        print(f"Question {i}/{n}:", question)
         print("Model's Answer:", final_answer)
         
         # 保存结果
@@ -62,6 +64,7 @@ def solve_math_with_llm(data: list) -> list:
             'prediction': final_answer, 
             'ground_truth': d['answer']
         })
+        i += 1
     return predictions
 
 
@@ -83,11 +86,13 @@ if __name__ == '__main__':
 
     # 加载微调后的模型和分词器
     # tokenizer = AutoTokenizer.from_pretrained(args.model)
-    # model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype="auto", device_map="auto", safetensors=False, low_cpu_mem_usage=True)
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
-    model = AutoModelForCausalLM.from_pretrained(args.model)
+    # model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype="auto", device_map="auto", low_cpu_mem_usage=True)
+    
+    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Math-1.5B")
+    model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-Math-1.5B")
+    
     model.to(device)
-    print("Model loaded successfully!")
+    print(f"Model loaded successfully using {device}!")
 
     # 获取模型预测结果
     predicted_results = solve_math_with_llm(data)

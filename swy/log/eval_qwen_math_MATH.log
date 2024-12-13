@@ -1,0 +1,2001 @@
+outputs: left(3,frac{pi}{2}right)
+true_answer: left(3,frac{pi}{2}right)
+Correct
+
+outputs: p-q
+true_answer: p-q
+Correct
+
+outputs: frac{14}{3}
+true_answer: frac{14}{3}
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: evelyn
+true_answer: evelyn
+Correct
+
+outputs: 42
+true_answer: 42
+Correct
+
+outputs: 27
+true_answer: 27
+Correct
+
+outputs: 45
+true_answer: 90
+Incorrect
+
+outputs: 3sqrt{13}
+true_answer: 3sqrt{13}
+Correct
+
+outputs: 1
+true_answer: 4
+Incorrect
+
+outputs: 2220
+true_answer: 2220
+Correct
+
+outputs: frac{5761}{45360}
+true_answer: frac{3}{56}
+Incorrect
+
+outputs: 284
+true_answer: 284
+Correct
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: 10
+true_answer: sqrt{51}
+Incorrect
+
+outputs: 6-5i
+true_answer: 6-5i
+Correct
+
+outputs: -50
+true_answer: -50
+Correct
+
+outputs: pi
+true_answer: pi
+Correct
+
+outputs: 56
+true_answer: 28
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 6+9i
+true_answer: 6+9i
+Correct
+
+outputs: 13535
+true_answer: 13535
+Correct
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 0
+true_answer: 1,-2
+Incorrect
+
+outputs: 576
+true_answer: 144
+Incorrect
+
+outputs: 78
+true_answer: 78
+Correct
+
+outputs: -2+7i
+true_answer: -2+7i
+Correct
+
+outputs: 225
+true_answer: 225
+Correct
+
+outputs: 52_8
+true_answer: 52_8
+Correct
+
+outputs: 11sqrt{2}
+true_answer: 11sqrt2
+Incorrect
+
+outputs: 720
+true_answer: 720
+Correct
+
+outputs: frac{81}{200}
+true_answer: frac{243}{625}
+Incorrect
+
+outputs: -125
+true_answer: -125
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 5
+true_answer: 3,5,7
+Incorrect
+
+outputs: 72
+true_answer: 72
+Correct
+
+outputs: 2000
+true_answer: 2000
+Correct
+
+outputs: 23
+true_answer: 23
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 5
+true_answer: 17
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 100
+true_answer: 70sqrt{2}
+Incorrect
+
+outputs: 1.25
+true_answer: 1.25
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: frac{3}{2}
+true_answer: frac{3}{2}
+Correct
+
+outputs: 83
+true_answer: 83
+Correct
+
+outputs: 203
+true_answer: 203
+Correct
+
+outputs: x^5-x^4+x^3-x^2+x-1
+true_answer: x^5-x^4+x^3-x^2+x-1
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: -frac{pi}{6}
+true_answer: -frac{pi}{6}
+Correct
+
+outputs: 0.15
+true_answer: 0.15
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 11
+true_answer: 11
+Correct
+
+outputs: 16
+true_answer: 16
+Correct
+
+outputs: 10000
+true_answer: 9901
+Incorrect
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: (6,-9,-1)
+true_answer: (6,31,-1)
+Incorrect
+
+outputs: -256
+true_answer: -256
+Correct
+
+outputs: sqrt{frac{17+sqrt{177}}{2}}
+true_answer: 4
+Incorrect
+
+outputs: 9
+true_answer: 10
+Incorrect
+
+outputs: 1
+true_answer: frac{35}{64}
+Incorrect
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: x^3+3x-6
+true_answer: x^3+3x-6
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 47
+true_answer: 46
+Incorrect
+
+outputs: -1
+true_answer: -1
+Correct
+
+outputs: 40_9
+true_answer: 40_9
+Correct
+
+outputs: 2516
+true_answer: 2516_8
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: frac{3sqrt{3}}{4}
+true_answer: frac{3sqrt{3}}{4}
+Correct
+
+outputs: cotx
+true_answer: cotx
+Correct
+
+outputs: frac{11}{36}
+true_answer: frac{11}{36}
+Correct
+
+outputs: 0
+true_answer: 0
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: (-2,1)
+true_answer: (-2,1)
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 2
+true_answer: 501
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: frac{3}{5}
+true_answer: frac{3}{2}
+Incorrect
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: -1
+true_answer: -1
+Correct
+
+outputs: sqrt{5}
+true_answer: sqrt{5}
+Correct
+
+outputs: 240
+true_answer: 240
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 3
+true_answer: 21
+Incorrect
+
+outputs: 15
+true_answer: frac{3}{2}
+Incorrect
+
+outputs: 3
+true_answer: 1
+Incorrect
+
+outputs: frac{224}{78125}
+true_answer: frac{448}{15625}
+Incorrect
+
+outputs: 33
+true_answer: 33
+Correct
+
+outputs: 70^circ
+true_answer: 80
+Incorrect
+
+outputs: -4
+true_answer: -4
+Correct
+
+outputs: 5
+true_answer: 1pmsqrt{19}
+Incorrect
+
+outputs: east
+true_answer: east
+Correct
+
+outputs: 2k+2
+true_answer: 2k+2
+Correct
+
+outputs: begin{pmatrix}-frac{1}{3}frac{2}{3}frac{5}{3}end{pmatrix}
+true_answer: begin{pmatrix}-1/32/35/3end{pmatrix}
+Incorrect
+
+outputs: 30
+true_answer: 145
+Incorrect
+
+outputs: 850
+true_answer: 850
+Correct
+
+outputs: (a+5)(b+2)
+true_answer: (a+5)(b+2)
+Correct
+
+outputs: 2
+true_answer: (3,4]
+Incorrect
+
+outputs: 40
+true_answer: 40
+Correct
+
+outputs: 15.5
+true_answer: 29
+Incorrect
+
+outputs: frac{4}{3}
+true_answer: frac43
+Incorrect
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 25
+true_answer: 120
+Incorrect
+
+outputs: 6
+true_answer: 504
+Incorrect
+
+outputs: thisisalsoacombinationproblem,denotedas(binom{4}{2}),whichiscalculatedasfollows:[binom{4}{2}=frac{4!}{2!(4-2)!}=frac{4!}{2!2!}=frac{4times3}{2times1}=6]tofindthetotalnumberofwaystochoose3boysand2girls,wemultiplythenumberofwaystochoosetheboysbythenumberofwaystochoosethegirls:[binom{7}{3}timesbinom{4}{2}=35times
+true_answer: 210
+Incorrect
+
+outputs: 13
+true_answer: 13
+Correct
+
+outputs: 8000
+true_answer: 8000
+Correct
+
+outputs: -5
+true_answer: -5
+Correct
+
+outputs: 30240
+true_answer: 1260
+Incorrect
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 81
+true_answer: 81
+Correct
+
+outputs: 3
+true_answer: -9
+Incorrect
+
+outputs: even
+true_answer: even
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4}x+3]solvingthesystemcorrectly:[y=-frac{3}{4}x+6quadtext{and}quady=-frac{3}{4
+true_answer: 8
+Incorrect
+
+outputs: frac{11}{2}
+true_answer: frac{11}{2}
+Correct
+
+outputs: -3
+true_answer: -3
+Correct
+
+outputs: tosolvefor(z_{2002})giventhefunction(f(z)=frac{z+i}{z-i})andtheinitialvalue(z_0=frac{1}{137}+i),weneedtounderstandthebehaviorofthesequence(z_n)definedby(z_n=f(z_{n-1})).first,let'scomputethefirstfewtermsofthesequencetoidentifyanypatterns.startingwith(z_0=frac{1}{137}+i),wecalculate(z_1):[z_1=f(z_0)=frac{frac{1}{137}+i+i}{frac{1}{137}+i-i}=frac{frac{1}{137}+2i}{frac{1}{137}}=1+274i.]next,wecalculate(z_2):[z_2=f(z_1)=frac{1+274i+i}{1+274i-i}=frac{1+275i}{1+273i}.]tosimplifythis,wemultiplythenumeratorandthedenominatorbythecomplexconjugateofthedenominator:[z_2=frac{(1+275i)(1-273i)}{(1+273i)(1-273i)}=frac{1-273i+275i-275cdot273i^2}{1-(273i)^2}=frac{1+2i+275cdot273}{1+273^2}=frac{1+2i+74825}{1+74529}=frac{74826+2i}{74530}=frac{37413+i}{37265}.]now,wecalculate(z_3):[z_3=f(z_2)=frac{frac{37413+i}{37265}+i}{frac{37413+i}{37265}-i}=frac{frac{37413+i+37265i}{37265}}{frac{37413+i-37265i}{37265}}=frac{37413+37266i}{37413-37264i}.]again,wesimplifybymultiplyingthenumeratorandthedenominatorbythecomplexconjugateofthedenominator:[z_3=frac{(37413+37266i)(37413+37264i)}{(37413-37264i)(37413+37264i)}=frac{37413^2+37413cdot37264i+37266icdot37413+37266i^2cdot37264}{37413^2+37264^2}=frac{37413^2-37266^2+(37413cdot37264+37266cdot37413)i}{37413^2+37264^2}=frac{37413^2-37266^2}{37413^2+37264^2}+frac{2cdot37413cdot37266}{37413^2+37264^2}i.]noticethattherealpartandtheimaginarypartaresymmetric,andthesequenceappearstobeperiodic
+true_answer: 1+274i
+Correct
+
+outputs: 4210_5
+true_answer: 4210_{5}
+Incorrect
+
+outputs: 36
+true_answer: 36
+Correct
+
+outputs: frac{480}{17}
+true_answer: frac{3840}{289}
+Incorrect
+
+outputs: 13
+true_answer: 13
+Correct
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 120
+true_answer: 120
+Correct
+
+outputs: 16
+true_answer: 16
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: 64
+true_answer: 64
+Correct
+
+outputs: 204_5
+true_answer: 204_5
+Correct
+
+outputs: frac{1}{6}
+true_answer: frac{1}{3}
+Incorrect
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 13
+true_answer: 13
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 28800
+true_answer: 28800
+Correct
+
+outputs: 3sqrt{5}
+true_answer: 3sqrt{5}
+Correct
+
+outputs: (15,-29)
+true_answer: (15,-29)
+Correct
+
+outputs: frac{1+sqrt{5}}{2}
+true_answer: -2
+Incorrect
+
+outputs: frac{sqrt{3}}{3}
+true_answer: frac{sqrt{3}}{3}
+Correct
+
+outputs: 12
+true_answer: 16
+Incorrect
+
+outputs: 11
+true_answer: 11
+Correct
+
+outputs: 49
+true_answer: 49
+Correct
+
+outputs: 0
+true_answer: 1
+Incorrect
+
+outputs: 144
+true_answer: 144
+Correct
+
+outputs: 16
+true_answer: 8
+Incorrect
+
+outputs: frac{2}{21}
+true_answer: frac{2}{21}
+Correct
+
+outputs: 2sqrt{34}
+true_answer: 2sqrt{113}
+Incorrect
+
+outputs: frac{1}{4}
+true_answer: frac{1}{4}
+Correct
+
+outputs: 90
+true_answer: 30
+Incorrect
+
+outputs: frac{6}{5}
+true_answer: frac65
+Incorrect
+
+outputs: 2107
+true_answer: 2107
+Correct
+
+outputs: 3.21
+true_answer: 3.21
+Correct
+
+outputs: 18
+true_answer: 18
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: frac{17}{50}
+true_answer: frac{17}{50}
+Correct
+
+outputs: -frac{35}{9}
+true_answer: -frac{35}{9}
+Correct
+
+outputs: sqrt{3}
+true_answer: -sqrt{3}
+Incorrect
+
+outputs: frac{4}{9}
+true_answer: frac{4}{9}
+Correct
+
+outputs: frac{360}{7}
+true_answer: degrees
+Incorrect
+
+outputs: 65
+true_answer: 65
+Correct
+
+outputs: 8
+true_answer: 19
+Incorrect
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 3528
+true_answer: 1736
+Incorrect
+
+outputs: frac{13}{15}
+true_answer: frac{13}{15}
+Correct
+
+outputs: 350
+true_answer: 350
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 0.0000672
+true_answer: .0000672
+Correct
+
+outputs: 45
+true_answer: 30
+Incorrect
+
+outputs: 60
+true_answer: 60
+Correct
+
+outputs: 5x-7y+11z+4=0
+true_answer: 5x-7y+11z+4=0
+Correct
+
+outputs: 1
+true_answer: 3
+Incorrect
+
+outputs: frac{sqrt{3}}{3}
+true_answer: frac{sqrt{3}}{3}
+Correct
+
+outputs: 1251
+true_answer: 1251
+Correct
+
+outputs: 23
+true_answer: 23
+Correct
+
+outputs: (1,infty)
+true_answer: (2,infty)
+Incorrect
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 7
+true_answer: 7
+Correct
+
+outputs: 7
+true_answer: 7
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 210
+true_answer: 160
+Incorrect
+
+outputs: frac{13}{18}
+true_answer: frac{13}{18}
+Correct
+
+outputs: 0
+true_answer: 0
+Correct
+
+outputs: 30
+true_answer: 30
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: frac{1}{4}
+true_answer: frac{1}{4}
+Correct
+
+outputs: 24
+true_answer: 24
+Correct
+
+outputs: 1600
+true_answer: 1600
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 10080
+true_answer: 10,!080
+Incorrect
+
+outputs: 17
+true_answer: 17
+Correct
+
+outputs: 40
+true_answer: 40
+Correct
+
+outputs: 66
+true_answer: 66
+Correct
+
+outputs: frac{2}{3}
+true_answer: frac{2}{3}
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 16
+true_answer: 0
+Incorrect
+
+outputs: begin{pmatrix}-2-14-7end{pmatrix}
+true_answer: begin{pmatrix}-2-14-7end{pmatrix}
+Correct
+
+outputs: left(frac{3}{2},-13right)
+true_answer: left(frac{3}{2},-13right)
+Correct
+
+outputs: 28
+true_answer: 28
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 16
+true_answer: 16
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: 50
+true_answer: 56
+Incorrect
+
+outputs: 1
+true_answer: 2
+Incorrect
+
+outputs: 75
+true_answer: 110
+Incorrect
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 11111111100
+true_answer: 11,!111,!111,!100
+Incorrect
+
+outputs: (-1,6)
+true_answer: (-1,6)
+Correct
+
+outputs: frac{9}{20}
+true_answer: frac{1}{2}
+Incorrect
+
+outputs: frac{2}{27}
+true_answer: frac{16}{27}
+Incorrect
+
+outputs: 900
+true_answer: 900
+Correct
+
+outputs: 150
+true_answer: 54
+Incorrect
+
+outputs: 14
+true_answer: 14
+Correct
+
+outputs: frac{1}{128}
+true_answer: frac{9}{256}
+Incorrect
+
+outputs: 11
+true_answer: 11
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: c
+true_answer: (c)
+Incorrect
+
+outputs: 288pi
+true_answer: 288pi
+Correct
+
+outputs: 90
+true_answer: 90
+Correct
+
+outputs: frac{16}{5}
+true_answer: frac{16}{5}
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: frac{1997}{2}
+true_answer: frac{1997}{2}
+Correct
+
+outputs: 30
+true_answer: 30
+Correct
+
+outputs: 34
+true_answer: 34
+Correct
+
+outputs: frac{5}{9}
+true_answer: frac59
+Incorrect
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 22
+true_answer: 22
+Correct
+
+outputs: -4
+true_answer: -4
+Correct
+
+outputs: let'stry(a=2)and(b=3):[d^2=frac{9}{2}sqrt{(2^2+1)(3^2+1)}=frac{9}{2}sqrt{5cdot10}=frac{9}{2}sqrt{50}=frac{9}{2}cdot5sqrt{2}=frac{45sqrt{2}}{2}.]thisisnotaninteger,solet'stry(a=3)and(b=2):[d^2=frac{9}{2}sqrt{(3^2+1)(2^2+1)}=frac{9}{2}sqrt{10cdot5}=frac{9}{2}sqrt{50}=frac{9}{2}cdot5sqrt{2}=frac{45sqrt{2}}{2}.]thisisnotanintegereither
+true_answer: 16
+Incorrect
+
+outputs: 52
+true_answer: 116
+Incorrect
+
+outputs: 17
+true_answer: 17
+Correct
+
+outputs: 32349
+true_answer: 32,!348
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: -frac{35}{2}x-frac{13}{2}
+true_answer: -13x+3
+Incorrect
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: frac{10}{11}
+true_answer: frac{10}{11}
+Correct
+
+outputs: begin{pmatrix}2&00&2end{pmatrix}
+true_answer: begin{pmatrix}-1&00&-1end{pmatrix}
+Incorrect
+
+outputs: 11
+true_answer: 17
+Incorrect
+
+outputs: 13
+true_answer: 13
+Correct
+
+outputs: 540
+true_answer: 540
+Correct
+
+outputs: 81
+true_answer: 81
+Correct
+
+outputs: frac{1}{8}
+true_answer: frac{1}{8}
+Correct
+
+outputs: 28
+true_answer: 28
+Correct
+
+outputs: e
+true_answer: (e)
+Incorrect
+
+outputs: frac{8}{21}
+true_answer: frac{8}{21}
+Correct
+
+outputs: 864
+true_answer: 864mbox{inches}^2
+Incorrect
+
+outputs: 16
+true_answer: 16
+Correct
+
+outputs: 22
+true_answer: 22
+Correct
+
+outputs: 120
+true_answer: 120
+Correct
+
+outputs: 76
+true_answer: 76
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 15
+true_answer: 15
+Correct
+
+outputs: 3
+true_answer: 1frac{4}{5}
+Incorrect
+
+outputs: 4005
+true_answer: 4005
+Correct
+
+outputs: frac{33}{100}
+true_answer: frac{33}{100}
+Correct
+
+outputs: 180
+true_answer: 180
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 333
+true_answer: 333
+Correct
+
+outputs: 92
+true_answer: 1030
+Incorrect
+
+outputs: 1250
+true_answer: 1250
+Correct
+
+outputs: 36
+true_answer: 18+2pi
+Incorrect
+
+outputs: 7
+true_answer: 7
+Correct
+
+outputs: 11
+true_answer: 11
+Correct
+
+outputs: sqrt{53}
+true_answer: sqrt{53}
+Correct
+
+outputs: 255
+true_answer: 255
+Correct
+
+outputs: 4pi
+true_answer: 7pi
+Incorrect
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: 36^circ
+true_answer: 36
+Correct
+
+outputs: 497
+true_answer: 129
+Incorrect
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: nosolutions
+true_answer: 3pm2sqrt{2}
+Incorrect
+
+outputs: finally,wetry(a=25):[r+s+t=25][rs+rt+st=frac{25^2-81}{2}=frac{625-81}{2}=272]weneedtofindthreepositiveintegers(r,s,)and(t)thatsatisfytheseequations
+true_answer: 440
+Incorrect
+
+outputs: 1
+true_answer: frac{17}{21}
+Incorrect
+
+outputs: 36
+true_answer: 36
+Correct
+
+outputs: 7
+true_answer: 7
+Correct
+
+outputs: 16
+true_answer: 16
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 63
+true_answer: 63
+Correct
+
+outputs: 898
+true_answer: 898
+Correct
+
+outputs: left(frac{3}{5},frac{8}{3}right]
+true_answer: left(frac{3}{5},frac{8}{3}right]
+Correct
+
+outputs: 71
+true_answer: 58
+Incorrect
+
+outputs: 10
+true_answer: 11
+Incorrect
+
+outputs: e
+true_answer: (b)
+Incorrect
+
+outputs: 103
+true_answer: 103
+Correct
+
+outputs: begin{pmatrix}-18-4996end{pmatrix}
+true_answer: begin{pmatrix}-18-4996end{pmatrix}
+Correct
+
+outputs: 56
+true_answer: 63
+Incorrect
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 4.9
+true_answer: cents
+Incorrect
+
+outputs: 4
+true_answer: 5
+Incorrect
+
+outputs: 21
+true_answer: 28
+Incorrect
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: frac{9}{19}
+true_answer: frac9{19}
+Incorrect
+
+outputs: 2
+true_answer: 6
+Incorrect
+
+outputs: (-infty,0]
+true_answer: (-infty,0]
+Correct
+
+outputs: frac{7sqrt{3}}{2}
+true_answer: 1+2sqrt{3}
+Incorrect
+
+outputs: 14
+true_answer: 14
+Correct
+
+outputs: 49
+true_answer: 49
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: (5,infty)
+true_answer: (5,infty)
+Correct
+
+outputs: 12pi
+true_answer: 12pi
+Correct
+
+outputs: (2,4)
+true_answer: (2,4)
+Correct
+
+outputs: 41
+true_answer: 41
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 2
+true_answer: 0
+Incorrect
+
+outputs: frac{11+9a}{20}
+true_answer: frac{11+9a}{20}
+Correct
+
+outputs: -128
+true_answer: -128
+Correct
+
+outputs: -frac{24}{25}
+true_answer: -frac{24}{25}
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: -1
+true_answer: -1
+Correct
+
+outputs: frac{1}{3}
+true_answer: frac{1}{3}
+Correct
+
+outputs: 200
+true_answer: 120
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: frac{9}{100}
+true_answer: frac{9}{100}
+Correct
+
+outputs: 130
+true_answer: 15
+Incorrect
+
+outputs: 2
+true_answer: 3
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 1940
+true_answer: 1940
+Correct
+
+outputs: dfrac{13}{6}
+true_answer: frac{13}{6}
+Correct
+
+outputs: frac{4sqrt{3}}{3}
+true_answer: 2
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: -120
+true_answer: -120
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 26000
+true_answer: 26000
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 4343_6
+true_answer: 4343_6
+Correct
+
+outputs: 2k
+true_answer: 2k
+Correct
+
+outputs: 65^circ
+true_answer: 55
+Incorrect
+
+outputs: -2
+true_answer: -2
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 58500
+true_answer: 58,500
+Incorrect
+
+outputs: 5
+true_answer: 5
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 66
+true_answer: 66
+Correct
+
+outputs: 6r^2-4r-24
+true_answer: 6r^2-4r-24
+Correct
+
+outputs: 4495
+true_answer: 4495
+Correct
+
+outputs: 5040
+true_answer: 10080
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: -frac{1}{16}
+true_answer: frac{1}{16}
+Correct
+
+outputs: 44
+true_answer: 11sqrt{5}+11
+Incorrect
+
+outputs: 480
+true_answer: 480
+Correct
+
+outputs: 81
+true_answer: 81
+Correct
+
+outputs: 120
+true_answer: 100
+Incorrect
+
+outputs: (-sqrt{3},sqrt{3})
+true_answer: (-sqrt{3},sqrt{3})
+Correct
+
+outputs: 2
+true_answer: 4
+Incorrect
+
+outputs: circle
+true_answer: ellipse
+Incorrect
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: -frac{7}{4}
+true_answer: frac{7}{4}
+Correct
+
+outputs: 16sqrt{3}
+true_answer: 16sqrt{3}
+Correct
+
+outputs: frac{1}{4}
+true_answer: frac14
+Incorrect
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: (1,-16,-4,43)
+true_answer: (1,-16,-4,43)
+Correct
+
+outputs: 7
+true_answer: 8
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 31
+true_answer: 31
+Correct
+
+outputs: 144
+true_answer: 21
+Incorrect
+
+outputs: -41
+true_answer: -41
+Correct
+
+outputs: 7
+true_answer: 17
+Incorrect
+
+outputs: 70^circ
+true_answer: 90
+Incorrect
+
+outputs: 1+2i
+true_answer: 1+2i
+Correct
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 25
+true_answer: 25
+Correct
+
+outputs: (8,-2)
+true_answer: (8,-2)
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: (0,36)
+true_answer: (0,9)cup(9,36)
+Incorrect
+
+outputs: frac{2}{9}
+true_answer: frac{1}{2}
+Incorrect
+
+outputs: frac{20000}{pi}
+true_answer: frac{20000}{pi}
+Correct
+
+outputs: [-2,7]
+true_answer: xin[-2,7]
+Incorrect
+
+outputs: 15x-80
+true_answer: 15x-80
+Correct
+
+outputs: 48
+true_answer: 22
+Incorrect
+
+outputs: 11
+true_answer: 11
+Correct
+
+outputs: 18
+true_answer: 18
+Correct
+
+outputs: 5.5
+true_answer: frac{11}{2}
+Incorrect
+
+outputs: frac{sqrt{21}}{5}
+true_answer: frac{sqrt{21}}{5}
+Correct
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 0
+true_answer: 0
+Correct
+
+outputs: 10
+true_answer: sqrt{66}
+Incorrect
+
+outputs: frac{3}{4}
+true_answer: frac34
+Incorrect
+
+outputs: 0
+true_answer: -frac{3}{8}
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 23
+true_answer: 23
+Correct
+
+outputs: 39.68
+true_answer: navin
+Incorrect
+
+outputs: 326.5
+true_answer: 326.5
+Correct
+
+outputs: frac{14}{3}
+true_answer: frac{14}{3}
+Correct
+
+outputs: 3
+true_answer: frac{13}{4}
+Incorrect
+
+outputs: 1-12i
+true_answer: 1-12i
+Correct
+
+outputs: 1
+true_answer: 3
+Incorrect
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 60
+true_answer: 60
+Correct
+
+outputs: 0
+true_answer: 0
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: begin{pmatrix}frac{1}{5}-frac{18}{5}end{pmatrix}
+true_answer: begin{pmatrix}1/5-18/5end{pmatrix}
+Incorrect
+
+outputs: 2sqrt{5}
+true_answer: 2sqrt{5}
+Correct
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 60
+true_answer: 60
+Correct
+
+outputs: 253
+true_answer: 406
+Incorrect
+
+outputs: 5r^5
+true_answer: 5r^5
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: frac{1}{4}
+true_answer: frac{1}{8}
+Incorrect
+
+outputs: -2
+true_answer: -2
+Correct
+
+outputs: 2sqrt{5}
+true_answer: 2sqrt{5}
+Correct
+
+outputs: begin{pmatrix}-7165end{pmatrix}
+true_answer: begin{pmatrix}-7165end{pmatrix}
+Correct
+
+outputs: begin{pmatrix}frac{16}{49}frac{48}{49}frac{24}{49}end{pmatrix}
+true_answer: begin{pmatrix}16/4948/4924/49end{pmatrix}
+Incorrect
+
+outputs: 32
+true_answer: 27
+Incorrect
+
+outputs: {-sqrt[3]{2},sqrt[3]{2}omega,sqrt[3]{2}omega^2}
+true_answer: {1pmsqrt{5},-2}
+Incorrect
+
+outputs: 1439
+true_answer: 1440
+Incorrect
+
+outputs: 600
+true_answer: 600
+Correct
+
+outputs: frac{a^2+b^2+c^2}{3}
+true_answer: 3r^2
+Incorrect
+
+outputs: 6sqrt{2}
+true_answer: 6sqrt{2}
+Correct
+
+outputs: 29
+true_answer: 29
+Correct
+
+outputs: 64
+true_answer: 64
+Correct
+
+outputs: 50
+true_answer: 50
+Correct
+
+outputs: 4.5
+true_answer: 4.5
+Correct
+
+outputs: left[frac{pi^2}{8},pi^2right]
+true_answer: left[frac{pi^2}{8},frac{5pi^2}{4}right]
+Incorrect
+
+outputs: 0
+true_answer: 331
+Incorrect
+
+outputs: 0.35625
+true_answer: .35625
+Correct
+
+outputs: 32
+true_answer: 32
+Correct
+
+outputs: (-infty,2)cup(3,infty)
+true_answer: (-infty,2)cup(3,infty)
+Correct
+
+outputs: plugginginthevaluesforourproblem,weget:[p(x=2)=binom{n}{2}left(frac{5}{6}right)^2left(frac{1}{6}right)^{n-2}]weknowthatthisprobabilityisequalto(frac{25}{216}),sowecansetuptheequation:[binom{n}{2}left(frac{5}{6}right)^2left(frac{1}{6}right)^{n-2}=frac{25}{216}]simplifyingtheleftside,weget:[binom{n}{2}cdotfrac{25}{36}cdotfrac{1}{6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdotfrac{25}{36cdot6^{n-2}}=frac{25}{216}][binom{n}{2}cdot
+true_answer: 4
+Incorrect
+
+outputs: 4
+true_answer: 3
+Incorrect
+
+outputs: 4
+true_answer: 4
+Correct
+
+outputs: x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1
+true_answer: x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1
+Correct
+
+outputs: 14
+true_answer: 14
+Correct
+
+outputs: 550
+true_answer: 550
+Correct
+
+outputs: 256
+true_answer: 256
+Correct
+
+outputs: 45
+true_answer: 45
+Correct
+
+outputs: frac{pi(k^2+1)}{16k}
+true_answer: frac{1}{2}
+Incorrect
+
+outputs: thenwehave:[z^2+64z-128=0.]solvingthisquadraticequationusingthequadraticformula(z=frac{-bpmsqrt{b^2-4ac}}{2a}),weget:[z=frac{-64pmsqrt{64^2+4cdot128}}{2}=frac{-64pmsqrt{4096+512}}{2}=frac{-64pmsqrt{4608}}{2}=frac{-64pm48sqrt{2}}{2}=-32pm24sqrt{2}.]since(z=y_1^2)mustbenon-negative,wehave:[y_1^2=-32+24sqrt{2}impliesy_1=pmsqrt{-32+24sqrt{2}}.]then,(x_1=frac{y_1^2}{8}=frac{-32+24sqrt{2}}{8}=-4+3sqrt{2}.)thepointsoftangencyare((x_1,y_1)=(-4+3sqrt{2},sqrt{-32+24sqrt{2}}))and((x_1,-y_1)=(-4+3sqrt{2},-sqrt{-32+24sqrt{2}}))
+true_answer: 15
+Incorrect
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: 44
+true_answer: 44
+Correct
+
+outputs: 47
+true_answer: 47
+Correct
+
+outputs: 64
+true_answer: 64
+Correct
+
+outputs: frac{639}{40}
+true_answer: frac{639}{40}
+Correct
+
+outputs: 143
+true_answer: 143
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: y=4x+1
+true_answer: y=2x+3
+Incorrect
+
+outputs: 6
+true_answer: 6
+Correct
+
+outputs: 1,-2
+true_answer: -2,1
+Incorrect
+
+outputs: 0
+true_answer: 0
+Correct
+
+outputs: 41
+true_answer: 41
+Correct
+
+outputs: 18.90
+true_answer: 18.90
+Correct
+
+outputs: 105
+true_answer: 75
+Incorrect
+
+outputs: 12
+true_answer: 12
+Correct
+
+outputs: 59
+true_answer: 59
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 9
+true_answer: 9
+Correct
+
+outputs: 121
+true_answer: 121
+Correct
+
+outputs: 8pi
+true_answer: 8pi
+Correct
+
+outputs: 15
+true_answer: 15mbox{cm}^2
+Incorrect
+
+outputs: 8
+true_answer: 8
+Correct
+
+outputs: 25
+true_answer: 25
+Correct
+
+outputs: frac{9765625}{1024}
+true_answer: 27648
+Incorrect
+
+outputs: 84
+true_answer: 84
+Correct
+
+outputs: 137frac{1}{2}})milesin(2frac{3}{4
+true_answer: 137frac{1}{2}
+Correct
+
+outputs: 7
+true_answer: 7
+Correct
+
+outputs: 3
+true_answer: 3
+Correct
+
+outputs: 119
+true_answer: 29
+Incorrect
+
+outputs: 200
+true_answer: 200
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 0
+true_answer: frac{2}{1005}
+Incorrect
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 1
+true_answer: 1
+Correct
+
+outputs: 2n
+true_answer: 8n^2+4n+1
+Incorrect
+
+outputs: 202
+true_answer: 202
+Correct
+
+outputs: frac{8}{15}
+true_answer: frac{8}{15}
+Correct
+
+outputs: 10
+true_answer: 10
+Correct
+
+outputs: 12
+true_answer: 13
+Incorrect
+
+outputs: 216
+true_answer: 216
+Correct
+
+outputs: 2
+true_answer: 2
+Correct
+
+outputs: 36
+true_answer: 36
+Correct
+
+outputs: 15
+true_answer: 15
+Correct
+
+outputs: 16
+true_answer: 14
+Incorrect
+
+outputs: 4
+true_answer: 64
+Incorrect
+
+outputs: y=-2x
+true_answer: y=-2x
+Correct
+
+outputs: 20
+true_answer: 20
+Correct
+
+outputs: 2
+true_answer: frac{1}{4}
+Incorrect
+
+outputs: (2,12)cup(12,102)
+true_answer: (2,12)cup(12,102)
+Correct
+
+outputs: dfrac{5}{13}
+true_answer: frac{5}{13}
+Correct
+
+outputs: 2
+true_answer: frac{7}{2}
+Incorrect
+
+outputs: 1
+true_answer: -1
+Incorrect
+
+outputs: 106
+true_answer: 106
+Correct
+
+Accuracy: 0.7
