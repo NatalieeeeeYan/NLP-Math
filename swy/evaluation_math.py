@@ -46,14 +46,15 @@ def extract_finalans(model_reply: str) -> list:
     @return 提取到的回答中的数字（可能的回答）(list[float])
     '''
     model_reply = model_reply.replace(prompt_sys, '').replace(prompt, '').replace('systemuser.question:', '')
-    model_reply = model_reply.replace('\\', '').replace('\n', '').lower()
+    moodel_reply = model_reply.replace('\\', '').replace('\n', '').lower()
+    final_ans = model_reply
 
     # print('model_reply:', model_reply)
     # 提取结论句
-    if 'boxed' in model_reply:
-        final_ans = model_reply[model_reply.find('boxed') + len('boxed{') : model_reply.rindex('}')]
+    if 'boxed' in final_ans:
+        final_ans = final_ans[final_ans.find('boxed') + len('boxed{') : final_ans.rindex('}')]
     else:
-        for sentence in model_reply.split('. '):
+        for sentence in moodel_reply.split('. '):
             if any(word in sentence for word in ['therefore', 'so', 'thus', 'hence', 'final']):
                 final_ans = sentence
     
