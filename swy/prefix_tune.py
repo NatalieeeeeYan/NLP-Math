@@ -11,21 +11,21 @@ base_model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype="auto"
 
 # 定义 Prefix Tuning 模块
 class PrefixTuning(nn.Module):
-    def __init__(self, config, prefix_length=20):
+    def __init__(self, config, prefix_length=20, dtype=torch.float32):
         super().__init__()
         self.prefix_length = prefix_length
         self.embedding_dim = config.hidden_size
-        self.num_layers = config.num_hidden_layers
-        self.num_heads = config.num_attention_heads
-        self.head_dim = self.embedding_dim // self.num_heads
+        self.dtype = dtype
 
         # 初始化前缀嵌入
-        self.prefix_embeddings = nn.Parameter(torch.randn(self.prefix_length, self.num_layers, 2, self.num_heads, self.head_dim))
+        self.prefix_embeddings = nn.Parameter(
+            torch.randn(prefix_length, self.embedding_dim, dtype=self.dtype)
+        )
 
     def forward(self, batch_size, device):
         # 扩展前缀嵌入以匹配批次大小
-        prefix_embeddings = self.prefix_embeddings.unsqueeze(0).expand(batch_size, -1, -1, -1, -1, -1)
-        return prefix_embeddings.to(device)
+        prefix = self.prefix_embeddings.unsqueeze(0).expand(batch_size, -1, -1).to(device)
+        return prefix
 
 # 注入 Prefix Tuning 到模型
 class PrefixTunedModel(nn.Module):
@@ -35,33 +35,50 @@ class PrefixTunedModel(nn.Module):
         self.prefix_tuning = prefix_tuning
 
     def forward(self, input_ids, attention_mask=None, labels=None):
-        batch_size = input_ids.size(0)
-        prefix_embeddings = self.prefix_tuning(batch_size, input_ids.device)
+        batch_size, seq_length = input_ids.size(0), input_ids.size(1)
+        device = input_ids.device
 
-        # 转换为 past_key_values 格式
-        past_key_values = tuple(
-            (prefix_embeddings[:, :, layer_idx, 0], prefix_embeddings[:, :, layer_idx, 1])
-            for layer_idx in range(prefix_embeddings.size(2))
-        )
+        # 获取前缀嵌入
+        prefix_embeddings = self.prefix_tuning(batch_size, device)
 
+        # 获取模型原始的词嵌入
+        input_embeddings = self.base_model.get_input_embeddings()(input_ids)
+
+        # 拼接前缀嵌入和输入嵌入
+        extended_embeddings = torch.cat([prefix_embeddings, input_embeddings], dim=1)
+
+        # 调整 attention mask
+        if attention_mask is not None:
+            prefix_mask = torch.ones(batch_size, self.prefix_tuning.prefix_length, device=device)
+            extended_attention_mask = torch.cat([prefix_mask, attention_mask], dim=1)
+        else:
+            extended_attention_mask = None
+
+        # 调整 labels 长度
+        if labels is not None:
+            # 用 -100 填充前缀部分，忽略这些位置的损失
+            prefix_labels = torch.full((batch_size, self.prefix_tuning.prefix_length), -100, device=device)
+            extended_labels = torch.cat([prefix_labels, labels], dim=1)
+        else:
+            extended_labels = None
+
+        # 调用模型的 forward 方法
         outputs = self.base_model(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            labels=labels,
-            use_cache=False,  # 禁用缓存
-            past_key_values=past_key_values
+            inputs_embeds=extended_embeddings,
+            attention_mask=extended_attention_mask,
+            labels=extended_labels
         )
         return outputs
 
 # 初始化 Prefix Tuning
-prefix_tuning = PrefixTuning(base_model.config, prefix_length=20)
+prefix_tuning = PrefixTuning(base_model.config, prefix_length=20, dtype=base_model.get_input_embeddings().weight.dtype)
 model = PrefixTunedModel(base_model, prefix_tuning)
 
 # 检查设备
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 print(f"Using device: {device}")
-print("Model loaded with manual Prefix Tuning!")
+print("Model loaded with injected Prefix Tuning!")
 
 # 定义数据集类
 class MathDataset(Dataset):
@@ -133,3 +150,4 @@ trainer.train()
 torch.save(model.state_dict(), './models/qwen_prefix_tuning_model.pt')
 tokenizer.save_pretrained('./models/qwen_prefix_tuning_tokenizer')
 print("Model fine-tuning with manual Prefix Tuning completed and saved.")
+ 
